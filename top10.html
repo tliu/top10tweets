@@ -1,1 +1,48 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Twitter top retweets in the last n minutes</title>
+        <!-- Bootstrap -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="top10.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container top10-parent-container">
+            <div class="row show-grid">
+                <div class="col-md-3 top10-grid top10-container">
+                    <h2 style="margin-top: 0px;">Top retweets</h2>
+                    <label for="num-tweets">How many tweets?</label>
+                    <input id="num-tweets" type="number" class="form-control top10-number-input" value="10">
+                    <label for="num-tweets">How many minutes old?</label>
+                    <input id="num-minutes" type="number" class="form-control top10-number-input" value="10">
+                    <button type="button" id="go-button" class="btn btn-primary">Go!</button>
+                </div>
+                <div class="col-md-9 top10-grid" id="tweet-container">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="handlebars/handlebars-v1.3.0.js"></script>
+        <script src="top10.js"></script>
+        <script id="tweet-template" type="text/x-handlebars-template">
+            <div class="row show-grid">
+                <div class="tweet-single" id="tweet-{{id}}">
+                    <div class="tweet-info">
+                        <span class="author" id="tweet-author"></span>
+                        <span class="retweet-count" id="tweet-count">
+                        </span>
+                    </div>
+                    <span id="tweet-text"></span>
+                </div>
+            </div>
+        </script>
+    </body>
+</html>

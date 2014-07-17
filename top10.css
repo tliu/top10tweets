@@ -1,0 +1,44 @@
+.top10-number-input {
+    width: 75px;
+}
+
+#go-button {
+    margin-top: 12px;
+}
+
+.top10-grid {
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+
+
+.top10-container {
+    padding: 12px;
+
+}
+
+.top10-parent-container {
+    margin-top: 12px;
+}
+
+.tweet-single {
+    border: #66757f 1px solid;
+    border-radius: 3px;
+    padding: 6px;
+    font-size: 20px;
+    font-family: Helvetica Neue;
+    color: #292f33;
+    background-color: #ccd6dd;
+    margin: 12px;
+    margin-bottom: 24px;
+}
+
+.author {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.retweet-count {
+    font-size: 18px;
+    color: #66757f;
+}
