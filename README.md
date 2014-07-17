@@ -1,7 +1,8 @@
-To run:
-python top10.py to start the flask service on 127.0.0.1:5000
-
 python requirements: flask, tweepy
+
+To run:
+
+python top10.py to start the flask service on 127.0.0.1:5000
 
 open top10.html in a web browser and press the go button!
 
