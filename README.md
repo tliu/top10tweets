@@ -18,4 +18,3 @@ There’s a thread that spawns that every 60 seconds removes a bucket from the d
 
 Next there’s a simple flask app to serve the data and provide two simple REST endpoints for starting up the service and retrieving the top N tweets.
 
-The front end looks ok I think :)
